@@ -1,0 +1,131 @@
+:root {
+  --red: red;
+}
+@font-face {
+  font-family: "MyFont";
+  src: url();
+}
+
+.header-container {
+  width: 80%;
+  height: 70px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  border-radius: 0 0 10 10px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-weight: bolder;
+}
+
+.main-nav .logo {
+  display: none;
+}
+
+.main-nav ul {
+  display: flex;
+}
+
+.main-nav ul li a {
+  color: black;
+  display: block;
+  margin: 0 2px;
+  font-weight: 600;
+  padding: 8px 18px;
+  transition: 0.2s;
+  border-radius: 30px;
+}
+
+.main-nav ul li a:hover {
+  background: var(--red);
+  color: white;
+}
+
+.main-nav ul li a.active {
+  background: var(--red);
+  color: white;
+}
+
+.main-nav ul li a.active:hover {
+  background: white;
+  color: var(--red);
+  border: 1px solid var(--red);
+}
+
+.hamburger {
+  display: none;
+  height: fit-content;
+  cursor: pointer;
+  padding: 3px 8px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.hamburger:hover {
+  background: var(--red);
+}
+
+.hamburger div {
+  width: 30px;
+  height: 2px;
+  margin: 6px 0;
+  background: black;
+}
+
+@media only screen and (max-width: 1100px) {
+  header {
+    width: 90%;
+    padding: 0 20px;
+  }
+  .main-nav {
+    position: absolute;
+    left: -300px;
+    top: 0;
+    z-index: 999;
+    width: 280px;
+    height: 100vh;
+    background-color: white;
+    transition: 0.2s;
+    box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  #nav_check:checked ~ .main-nav {
+    left: 0;
+  }
+
+  .main-nav.logo {
+    display: block;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+  }
+
+  .main-nav ul li a {
+    margin-bottom: 10px;
+    padding: 20 40px;
+    margin-top: 5px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .main-nav ul {
+    display: block;
+    padding: 0 20px;
+    margin-top: 30px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
