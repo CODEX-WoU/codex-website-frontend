@@ -1,0 +1,50 @@
+.gif-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.github {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 2px solid #ff372d;
+    border-radius: 50px;
+}
+
+.github:hover {
+    color: black;
+    box-shadow: 0 0 40px white;
+    font-family: sans-serif;
+}
+.Linkedin {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 2px solid #ff372d;
+    border-radius: 50px;
+}
+
+.Linkedin:hover {
+    color: black;
+    box-shadow: 0 0 40px white;
+    font-family: sans-serif;
+}
+.Twitter {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 2px solid #ff372d;
+    border-radius: 50px;
+}
+
+.Twitter:hover {
+    color: black;
+    box-shadow: 0 0 40px white;
+    font-family: sans-serif;
+}
