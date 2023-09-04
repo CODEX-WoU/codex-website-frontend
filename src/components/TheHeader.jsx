@@ -5,9 +5,10 @@ const TheHeader = () => {
     <div>
       <header className="header-container">
         <div className="logo">
-          <h2>
+          {/* <h2>
             CODE<span style={{ color: "red" }}>&#123;X&#125;</span>
-          </h2>
+          </h2> */}
+          <img src="/src/assets/Dark mode logo.svg" width={225} />
         </div>
         <input type="checkbox" id="nav_check" hidden />
         <nav className="main-nav">

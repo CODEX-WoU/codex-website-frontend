@@ -1,0 +1,80 @@
+.landing-page-root {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+}
+
+.paragraph-container {
+  border: 12px solid #607466;
+}
+
+.title-text {
+  font-family: "Nico Moji", cursive;
+}
+
+.title-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line-break {
+  width: 100%;
+}
+.instagram {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: 2px solid #ff372d;
+  border-radius: 50px;
+}
+
+.instagram:hover {
+  color: black;
+  box-shadow: 0 0 40px white;
+  font-family: sans-serif;
+}
+
+.github {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: 2px solid #ff372d;
+  border-radius: 50px;
+}
+
+.github:hover {
+  color: black;
+  box-shadow: 0 0 40px white;
+  font-family: sans-serif;
+}
+.Linkedin {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: 2px solid #ff372d;
+  border-radius: 50px;
+}
+
+.Linkedin:hover {
+  color: black;
+  box-shadow: 0 0 40px white;
+  font-family: sans-serif;
+}
+.Twitter {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: 2px solid #ff372d;
+  border-radius: 50px;
+}
+
+.Twitter:hover {
+  color: black;
+  box-shadow: 0 0 40px white;
+  font-family: sans-serif;
+}

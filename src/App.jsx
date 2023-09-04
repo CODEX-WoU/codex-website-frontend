@@ -2,8 +2,8 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import "./styles/App.css";
 import TheHeader from "./components/TheHeader";
 import TheFooter from "./components/TheFooter";
-import LandingPage from "./components/LandingPage";
 import Events from "./components/Events";
+import LandingPageAlt from "./components/LandingPageAlt";
 
 function App() {
   return (
@@ -16,8 +16,8 @@ function App() {
               index
               element={
                 <div>
-                  <LandingPage />
-                  <Events />
+                  <LandingPageAlt />
+                  {/* <Events /> */}
                 </div>
               }
             />
