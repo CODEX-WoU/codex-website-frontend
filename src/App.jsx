@@ -1,4 +1,4 @@
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import "./styles/App.css";
 import TheHeader from "./components/TheHeader";
 import TheFooter from "./components/TheFooter";
@@ -9,8 +9,21 @@ function App() {
   return (
     <>
       <TheHeader />
-      <LandingPage/>
-      <Events />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/">
+            <Route
+              index
+              element={
+                <div>
+                  <LandingPage />
+                  <Events />
+                </div>
+              }
+            />
+          </Route>
+        </Routes>
+      </BrowserRouter>
       <TheFooter />
     </>
   );
