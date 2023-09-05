@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/App.css";
 
 const FORM_ENDPOINT =
   "https://public.herotofu.com/v1/93d53740-4aee-11ee-b201-930d103a99ad"; // TODO - update to the correct endpoint
@@ -48,10 +49,12 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="w-1/2 mx-auto">
-      <h2 className="text-4xl text-white text-center pb-5">Contact</h2>
+    <div className="w-3/4 xl:w-1/2 mx-auto">
+      <h2 className="text-3xl xl:text-7xl text-white text-center pb-5 contactFormTitle">
+        CONTACT
+      </h2>
       <form action={FORM_ENDPOINT} onSubmit={handleSubmit} method="POST">
-        <div className="pt-0 mb-3">
+        <div className="pt-0 mb-3 place-content-center">
           <input
             type="text"
             placeholder="Name"
@@ -102,7 +105,7 @@ const ContactForm = () => {
             className="active:bg-blue-600 hover:shadow-lg focus:outline-none px-6 py-3 mb-1 mr-1 text-sm font-bold text-white uppercase transition-all duration-150 ease-linear bg-blue-500 rounded shadow outline-none"
             type="submit"
           >
-            Send a message
+            Send
           </button>
         </div>
       </form>
