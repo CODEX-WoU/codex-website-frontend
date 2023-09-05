@@ -4,7 +4,11 @@ import TheHeader from "./components/TheHeader";
 import TheFooter from "./components/TheFooter";
 // import Events from "./components/Events";
 import LandingPageAlt from "./components/LandingPageAlt";
+<<<<<<< HEAD
 import Contact from "./components/Contact";
+=======
+import EventsAlt from "./components/EventsAlt";
+>>>>>>> ba521ed (Added EventsAlt)
 
 function App() {
   return (
@@ -18,8 +22,12 @@ function App() {
               element={
                 <div>
                   <LandingPageAlt />
+<<<<<<< HEAD
                   <Contact />
                   {/* <Events /> */}
+=======
+                  <EventsAlt />
+>>>>>>> ba521ed (Added EventsAlt)
                 </div>
               }
             />

@@ -1,0 +1,8 @@
+.events-root-container {
+  background-color: var(--dark-mode-alt-background);
+  color: var(--dark-mode-color);
+}
+
+.events-header {
+  font-family: "Nico Moji", cursive;
+}

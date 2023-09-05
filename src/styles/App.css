@@ -3,6 +3,11 @@
   max-width: 100%;
 }
 
+:root {
+  --dark-mode-alt-background: rgb(7, 7, 7);
+  --dark-mode-color: white;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
