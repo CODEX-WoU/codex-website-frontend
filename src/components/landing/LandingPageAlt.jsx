@@ -1,4 +1,4 @@
-import "../styles/landingpagealt.css";
+import "../../styles/landingpagealt.css";
 import { TypeAnimation } from "react-type-animation";
 import { FaGithub } from "react-icons/fa";
 import { LiaInstagram, LiaLinkedinIn } from "react-icons/lia";

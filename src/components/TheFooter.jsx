@@ -1,6 +1,8 @@
-const TheFooter = () => {
+const TheFooter = (props) => {
   return (
-    <div className="bg-gradient-to-t from-red-700 to-black-500 text-center font-bold text-white pb-10">
+    <div
+      className={`${props.className} bg-gradient-to-t from-red-700 to-black-500 text-center font-bold text-white pb-10`}
+    >
       <footer className="footer p-10 text-white place-items-center">
         {/* <nav>
           <header className="footer-title">Company</header>
