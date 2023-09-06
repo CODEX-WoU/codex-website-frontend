@@ -3,6 +3,7 @@
   border-width: 2px;
   height: 150px;
   width: fit-content;
+  width: -moz-max-content;
 }
 
 .MySwiper .swiper-pagination-bullet {

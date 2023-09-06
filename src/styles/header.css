@@ -65,6 +65,7 @@
 .hamburger {
   display: none;
   height: fit-content;
+  height: -moz-max-content;
   cursor: pointer;
   padding: 3px 8px;
   border-radius: 5px;
