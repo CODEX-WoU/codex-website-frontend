@@ -29,7 +29,7 @@ const LandingPageAlt = () => {
   }, []);
 
   return (
-    <div className="landing-page-root min-h-screen">
+    <div className="landing-page-root min-h-[90%]">
       <div className={`grid ${layoutConfig.cols} gap-4 min-h-[800px]`}>
         <div className="col-span-5 text-center">
           <div className="pb-16  flex flex-wrap items-center align-middle justify-center title-text text-9xl min-h-[800px]  text-white ">
