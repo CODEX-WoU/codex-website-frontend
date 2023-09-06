@@ -54,7 +54,12 @@ const TheFooter = (props) => {
           <a className="link link-hover">Privacy policy</a>
           <a className="link link-hover">Cookie policy</a>
         </nav> */}
-        <form>
+        <div>
+          <a href="mailto:codex@woxsen.edu.in" className="text-2xl">
+            Email Us: Codex@woxsen.edu.in
+          </a>
+        </div>
+        {/* <form>
           <header className="text-xl font-bold pl-0 underline-offset-1">
             Newsletter
           </header>
@@ -75,7 +80,7 @@ const TheFooter = (props) => {
               </button>
             </div>
           </fieldset>
-        </form>
+        </form> */}
       </footer>
       <p>© 2023 CODE&#123;X&#125; - Woxsen University</p>
     </div>
