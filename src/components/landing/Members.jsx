@@ -86,8 +86,8 @@ const Members = (props) => {
         <MemberCard
           name="Shravani Wanjari"
           role="Organizer"
-          imageSrc=""
-          githubUrl="#"
+          imageSrc="src\assets\members\ShravaniWanjari_Core.jpeg"
+          githubUrl="https://github.com/ShravaniAWanjari"
           linkedInUrl="https://www.linkedin.com/in/shravani-wanjari-2197ba22a/"
         />
         <MemberCard
