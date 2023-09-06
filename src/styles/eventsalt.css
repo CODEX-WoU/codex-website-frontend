@@ -8,10 +8,16 @@
 }
 
 .events-root-container {
-  background-color: var(--dark-mode-alt-background);
+  background-color: var(--dark-mode-background-light-1);
   color: var(--dark-mode-color);
 }
 
 .events-header {
   font-family: "Nico Moji", cursive;
+}
+
+.slider-list-element {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
