@@ -4,6 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 import { FaGithub } from "react-icons/fa";
 import { LiaInstagram, LiaLinkedinIn } from "react-icons/lia";
 import { TiSocialTwitter } from "react-icons/ti";
+import AppConstants from "../../utils/AppConstants";
 
 const LandingPageAlt = () => {
   const [layoutConfig, setlayoutConfig] = useState({
@@ -50,24 +51,28 @@ const LandingPageAlt = () => {
             </div>
             <div className="flex-none bg-black rounded-lg shadow-xl min-h-[200px] min-w-[26rem] justify-around ">
               <div className={`github ${layoutConfig.marginOnIcons}`}>
-                <a href="https://github.com/CODEX-WoU">
+                <a href={AppConstants.SOCIAL_MEDIA_LINKS.GITHUB_URL}>
                   <FaGithub style={{ color: "#ff372d" }} size={64}></FaGithub>
                 </a>
               </div>
               <div className={`Linkedin ${layoutConfig.marginOnIcons}`}>
-                <LiaLinkedinIn
-                  style={{ color: "#ff372d" }}
-                  size={64}
-                ></LiaLinkedinIn>
+                <a href={AppConstants.SOCIAL_MEDIA_LINKS.LINKEDIN_URL}>
+                  <LiaLinkedinIn
+                    style={{ color: "#ff372d" }}
+                    size={64}
+                  ></LiaLinkedinIn>
+                </a>
               </div>
               <div className={`Twitter ${layoutConfig.marginOnIcons}`}>
-                <TiSocialTwitter
-                  style={{ color: "#ff372d" }}
-                  size={64}
-                ></TiSocialTwitter>
+                <a href={AppConstants.SOCIAL_MEDIA_LINKS.X_URL}>
+                  <TiSocialTwitter
+                    style={{ color: "#ff372d" }}
+                    size={64}
+                  ></TiSocialTwitter>
+                </a>
               </div>
               <div className="instagram">
-                <a href="https://www.instagram.com/codex_wou">
+                <a href={AppConstants.SOCIAL_MEDIA_LINKS.INSTAGRAM_URL}>
                   <LiaInstagram
                     style={{ color: "#ff372d" }}
                     size={64}

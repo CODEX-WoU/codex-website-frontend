@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import AppConstants from "../utils/AppConstants";
 
 const TheFooter = (props) => {
   return (
@@ -18,7 +19,7 @@ const TheFooter = (props) => {
             Social
           </header>
           <a
-            href="https://github.com/CODEX-WoU"
+            href={AppConstants.SOCIAL_MEDIA_LINKS.GITHUB_URL}
             className="link link-hover inline-flex"
           >
             <FaGithub className="text-2xl mr-4" />
@@ -26,14 +27,14 @@ const TheFooter = (props) => {
           </a>
 
           <a
-            href="https://linkedin.com/company/codex-wou"
+            href={AppConstants.SOCIAL_MEDIA_LINKS.LINKEDIN_URL}
             className="link link-hover inline-flex align-middle"
           >
             <FaLinkedin className="text-2xl mr-4" /> Linkedin
           </a>
 
           <a
-            href="https://twitter.com/codex_wou"
+            href={AppConstants.SOCIAL_MEDIA_LINKS.X_URL}
             className="link link-hover inline-flex"
           >
             <FaTwitter className="text-2xl mr-4" />
@@ -41,7 +42,7 @@ const TheFooter = (props) => {
           </a>
 
           <a
-            href="https://www.instagram.com/codex_wou"
+            href={AppConstants.SOCIAL_MEDIA_LINKS.INSTAGRAM_URL}
             className="link link-hover inline-flex"
           >
             <FaInstagram className="text-2xl mr-4" />
