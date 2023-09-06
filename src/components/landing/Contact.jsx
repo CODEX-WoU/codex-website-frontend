@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../styles/App.css";
+import "../../styles/App.css";
 
 const FORM_ENDPOINT =
   "https://public.herotofu.com/v1/93d53740-4aee-11ee-b201-930d103a99ad"; // TODO - update to the correct endpoint
