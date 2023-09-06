@@ -31,9 +31,9 @@ const MemberCard = (props) => {
   };
 
   return (
-    <div className="member-card-content-container">
+    <div className={`mx-10 pt-5 member-card-content-container`}>
       <div
-        className={` grid w-[400px] h-[500px] ${divParams.gridRows}  gap-4 border-4 border-red-600`}
+        className={` grid max-sm:w-[350px] w-[350px] h-[500px] ${divParams.gridRows}  gap-4 border-4 border-red-600 bg-black`}
         onMouseEnter={toggleLinks}
         onMouseLeave={() => toggleLinks(false)}
       >

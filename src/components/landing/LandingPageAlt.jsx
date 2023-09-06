@@ -1,15 +1,38 @@
-import "../styles/landingpagealt.css";
+import "../../styles/landingpagealt.css";
+import { useState, useEffect, useRef } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FaGithub } from "react-icons/fa";
 import { LiaInstagram, LiaLinkedinIn } from "react-icons/lia";
 import { TiSocialTwitter } from "react-icons/ti";
 
 const LandingPageAlt = () => {
+  const [layoutConfig, setlayoutConfig] = useState({
+    cols: "grid-cols-12",
+    showGif: true,
+    marginOnIcons: "mr-16",
+  });
+
+  const windowWidth = useRef(window.innerWidth);
+
+  useEffect(() => {
+    function setLayoutConfigValues() {
+      if (windowWidth.current < 990) {
+        setlayoutConfig({
+          cols: "grid-cols-5",
+          showGif: false,
+          marginOnIcons: "mr-8",
+        });
+      }
+    }
+
+    setLayoutConfigValues();
+  }, []);
+
   return (
-    <div className="landing-page-root min-h-screen">
-      <div className="grid grid-cols-12 gap-4 min-h-[800px]">
+    <div className="landing-page-root min-h-[90%]">
+      <div className={`grid ${layoutConfig.cols} gap-4 min-h-[800px]`}>
         <div className="col-span-5 text-center">
-          <div className="pb-16  flex flex-wrap items-center justify-center title-text text-9xl min-h-[800px]  text-white ">
+          <div className="pb-16  flex flex-wrap items-center align-middle justify-center title-text text-9xl min-h-[800px]  text-white ">
             {" "}
             CODE
             <span className="text-red-600 font-bold">&#123;X&#125;</span>
@@ -25,19 +48,19 @@ const LandingPageAlt = () => {
                 }}
               />
             </div>
-            <div className="bg-black rounded-lg shadow-xl min-h-[200px] min-w-[26rem] ">
-              <div className="github mr-16">
+            <div className="flex-none bg-black rounded-lg shadow-xl min-h-[200px] min-w-[26rem] justify-around ">
+              <div className={`github ${layoutConfig.marginOnIcons}`}>
                 <a href="https://github.com/CODEX-WoU">
                   <FaGithub style={{ color: "#ff372d" }} size={64}></FaGithub>
                 </a>
               </div>
-              <div className="Linkedin mr-16">
+              <div className={`Linkedin ${layoutConfig.marginOnIcons}`}>
                 <LiaLinkedinIn
                   style={{ color: "#ff372d" }}
                   size={64}
                 ></LiaLinkedinIn>
               </div>
-              <div className="Twitter mr-16 ">
+              <div className={`Twitter ${layoutConfig.marginOnIcons}`}>
                 <TiSocialTwitter
                   style={{ color: "#ff372d" }}
                   size={64}
@@ -54,9 +77,15 @@ const LandingPageAlt = () => {
             </div>
           </div>
         </div>
-        <div className="min-h-[400px] col-span-7 flex align-middle">
-          <img src="src\assets\wp2757861.gif" width={975} className="m-auto" />
-        </div>
+        {layoutConfig.showGif && (
+          <div className="min-h-[400px] col-span-7 flex align-middle">
+            <img
+              src="src\assets\wp2757861.gif"
+              width={975}
+              className="m-auto"
+            />
+          </div>
+        )}
       </div>
     </div>
   );
