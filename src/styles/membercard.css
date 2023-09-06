@@ -1,0 +1,13 @@
+.member-card-content-container {
+  :hover > div {
+    transform: translateY(10px);
+    transition: transform 2s;
+  }
+}
+
+.member-card-content-container {
+  > div > div {
+    transform: translateY(-10px);
+    transition: transform 2s;
+  }
+}
