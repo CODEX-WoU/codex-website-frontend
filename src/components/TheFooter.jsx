@@ -1,3 +1,5 @@
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+
 const TheFooter = () => {
   return (
     <div className="bg-gradient-to-t from-red-700 to-black-500 text-center font-bold text-white pb-10">
@@ -13,22 +15,34 @@ const TheFooter = () => {
           <header className="text-xl font-bold pl-0 underline-offset-1">
             Social
           </header>
-          <a href="https://github.com/CODEX-WoU" className="link link-hover">
+          <a
+            href="https://github.com/CODEX-WoU"
+            className="link link-hover inline-flex"
+          >
+            <FaGithub className="text-2xl mr-4" />
             Github
           </a>
+
           <a
             href="https://linkedin.com/company/codex-wou"
-            className="link link-hover"
+            className="link link-hover inline-flex align-middle"
           >
-            Linkedin
+            <FaLinkedin className="text-2xl mr-4" /> Linkedin
           </a>
-          <a href="https://twitter.com/codex_wou" className="link link-hover">
+
+          <a
+            href="https://twitter.com/codex_wou"
+            className="link link-hover inline-flex"
+          >
+            <FaTwitter className="text-2xl mr-4" />
             Twitter
           </a>
+
           <a
             href="https://www.instagram.com/codex_wou"
-            className="link link-hover"
+            className="link link-hover inline-flex"
           >
+            <FaInstagram className="text-2xl mr-4" />
             Instagram
           </a>
         </nav>
