@@ -50,7 +50,7 @@ const ContactForm = () => {
 
   return (
     <div className="w-3/4 xl:w-1/2 mx-auto">
-      <h2 className="text-3xl xl:text-7xl text-white text-center pb-5 contactFormTitle">
+      <h2 className="text-3xl xl:text-7xl text-white text-center pb-5 heading-font">
         CONTACT
       </h2>
       <form action={FORM_ENDPOINT} onSubmit={handleSubmit} method="POST">
