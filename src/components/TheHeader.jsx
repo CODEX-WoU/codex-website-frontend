@@ -1,6 +1,9 @@
 import "../styles/header.css";
+import { Link, useLocation } from "react-router-dom";
 
 const TheHeader = () => {
+  const location = useLocation();
+
   return (
     <div>
       <header className="header-container">
@@ -17,18 +20,31 @@ const TheHeader = () => {
           </div> */}
           <ul>
             <li>
-              <a href="" className="active">
+              <Link
+                to={"/"}
+                className={location.pathname === "/" ? "active" : ""}
+              >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
               <a href="">About</a>
             </li>
             <li>
-              <a href="">Blog</a>
+              <Link
+                className={location.pathname === "/blogs" ? "active" : ""}
+                to="/blogs"
+              >
+                Blog
+              </Link>
             </li>
             <li>
-              <a href="">Events</a>
+              <Link
+                className={location.pathname === "/events" ? "active" : ""}
+                to="/events"
+              >
+                Events
+              </Link>
             </li>
             <li>
               <a href="">Portfolio</a>
