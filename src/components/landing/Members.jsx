@@ -108,7 +108,7 @@ const Members = (props) => {
           name="Anuj Mankurmare"
           role="Media Handler"
           imageSrc="src\assets\members\AnujMankumare_Core.jpg"
-          githubUrl="#"
+          githubUrl="https://github.com/PRIME-07"
           linkedInUrl="#"
         />
       </div>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { TiSocialLinkedin } from "react-icons/ti";
 import "../../styles/membercard.css";
+import AsyncImage from "./AsyncImage";
 
 const MemberCard = (props) => {
   const nameStyle = {
@@ -39,7 +40,7 @@ const MemberCard = (props) => {
       >
         <div className="text-center row-span-2 flex items-center justify-center align-middle">
           <div className="rounded-full overflow-hidden  border-4 h-[225px] w-[225px] ml-auto mr-auto">
-            <img className="block" src={props.imageSrc} />
+            <AsyncImage className="block" src={props.imageSrc} />
           </div>
         </div>
         <div
