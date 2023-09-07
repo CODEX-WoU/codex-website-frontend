@@ -37,9 +37,14 @@ const LandingPageAlt = () => {
             {" "}
             CODE
             <span className="text-red-600 font-bold">&#123;X&#125;</span>
-            <div className="text-base min-w-[26rem] ">
+            <div className="text-xs leading-normal w-[23.8rem] ">
               <TypeAnimation
-                sequence={["Code, Create and Innovate.", 5000, "", 1800]}
+                sequence={[
+                  AppConstants.LANDING_PAGE_BLINKING_CURSOR_TEXT,
+                  5000,
+                  "",
+                  1800,
+                ]}
                 speed={{ type: "keyStrokeDelayInMs", value: 200 }}
                 repeat={Infinity}
                 style={{

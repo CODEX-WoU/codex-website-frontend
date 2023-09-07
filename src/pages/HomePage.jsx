@@ -1,4 +1,4 @@
-// import EventsAlt from "../components/landing/EventsAlt";
+// import Events from "../components/landing/Events";
 import LandingPage from "../components/landing/LandingPage";
 import Members from "../components/landing/Members";
 import About from "../components/landing/About";
@@ -10,10 +10,12 @@ const HomePage = () => {
     <div>
       <LandingPage />
       <AnimationOnScroll animateIn="animate__slideInUp" animateOnce={true}>
-        <section>{<About />}</section>
+        <section>
+          {<About className="bg-[var(--dark-mode-background-light-1)]" />}
+        </section>
       </AnimationOnScroll>
 
-      {/* <EventsAlt
+      {/* <Events
         className="pt-12"
         backgroundColor="bg-[var(--dark-mode-background-light-1)]"
         color="text-[var(--dark-mode-color)]"

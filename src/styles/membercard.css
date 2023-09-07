@@ -1,13 +1,18 @@
-.member-card-content-container {
-  :hover > div {
-    transform: translateY(10px);
-    transition: transform 1s;
-  }
+.member-card-content-container:hover .text-container {
+  transform: translateY(-30px);
+  transition: transform 0.5s ease-out;
 }
 
-.member-card-content-container {
-  > div > div {
-    transform: translateY(-10px);
-    transition: transform 1s;
-  }
+.member-card-content-container .text-container {
+  transform: translateY(30px);
+  transition: transform 0.5s ease-in;
+}
+.member-card-content-container:hover .links-container {
+  transform: translateY(-5px);
+  transition: transform 1s;
+}
+
+.member-card-content-container .links-container {
+  transform: translateY(10px);
+  transition: transform 1s;
 }

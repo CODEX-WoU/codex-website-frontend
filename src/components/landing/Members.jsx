@@ -22,7 +22,7 @@ const Members = (props) => {
         </div>
       </div>
       <div
-        className="flex justify-center ml-auto mr-auto mt-36 items-center text-5xl w-[80%] border-b-4 border-red-900"
+        className="flex justify-center ml-auto mr-auto mt-24 items-center text-5xl w-[80%] border-b-4 border-red-900"
         style={{ ...fontStyle, color: "var(--dark-mode-color)" }}
       >
         Mentor
@@ -99,7 +99,7 @@ const Members = (props) => {
         />
         <MemberCard
           name="Dhruval Padia"
-          role="PR & Marketing"
+          role="PR, Marketing"
           imageSrc="src\assets\members\DhruvalPadia_Core.jpeg"
           githubUrl="https://github.com/dhruval30"
           linkedInUrl="https://www.linkedin.com/in/dhruvalpadia/"
