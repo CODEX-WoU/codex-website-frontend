@@ -38,15 +38,15 @@ const Members = (props) => {
           name="Lokesh Kumar"
           role="Mentor"
           imageSrc="src\assets\members\LokeshKumar_Mentor.jpg"
-          githubUrl="#"
-          linkedInUrl="#"
+          githubUrl=""
+          linkedInUrl="https://www.linkedin.com/in/lokeshskshukla/"
         />
         <MemberCard
           name="Amogh Deshmukh"
           role="Mentor"
           imageSrc="src\assets\members\AmoghDeshmukh_Mentor.jpeg"
           githubUrl="#"
-          linkedInUrl="#"
+          linkedInUrl="https://www.linkedin.com/in/amogh-deshmukh-35009b17/"
         />
       </div>
       <div
@@ -110,6 +110,97 @@ const Members = (props) => {
           imageSrc="src\assets\members\AnujMankumare_Core.jpg"
           githubUrl="https://github.com/PRIME-07"
           linkedInUrl="#"
+        />
+      </div>
+      <div
+        className="flex justify-center ml-auto mr-auto mt-12 items-center text-5xl w-[80%] border-b-4 border-red-900"
+        style={{ ...fontStyle, color: "var(--dark-mode-color)" }}
+      >
+        Executive
+        <span
+          style={{ ...fontStyle }}
+          className="events-header text-red-600 font-bold"
+        >
+          &#123;S&#125;
+        </span>
+      </div>
+      <div className="flex flex-grow basis-24 flex-wrap justify-around pt-12 pb-12">
+        <MemberCard
+          name="Sreeshanth Sangem"
+          // role="Executive"
+          imageSrc="src\assets\members\SreeshanthSangem_Executive.jpg"
+          githubUrl="https://github.com/sreeshanth9"
+          linkedInUrl="https://www.linkedin.com/in/sreeshanth-s-b0a742225/"
+        />
+        <MemberCard
+          name="Nikunj Gupta"
+          // role="Executive"
+          imageSrc="src\assets\members\NikunjGupta_Executive.jpg"
+          githubUrl="www.linkedin.com/in/nikunj-gupta-b66b94258"
+          linkedInUrl="https://www.linkedin.com/in/nikunj-gupta-b66b94258/"
+        />
+        <MemberCard
+          name="Ryyan Mathew"
+          // role="Executive"
+          imageSrc="src\assets\members\RyyanMathewHasan_Executive.jpg"
+          githubUrl="https://github.com/ryyan2407"
+          linkedInUrl="https://www.linkedin.com/in/ryyan-mathew-hasan-657248229/"
+        />
+        <MemberCard
+          name="Korimi Meghana"
+          // role="Executive"
+          imageSrc="src\assets\members\MeghanaKorimi_Executive.jpg"
+          githubUrl="https://github.com/sreeshanth9"
+          linkedInUrl="https://www.linkedin.com/in/sreeshanth-s-b0a742225/"
+        />
+        <MemberCard
+          name="Kshitij Moghe"
+          // role="Executive"
+          imageSrc="src\assets\members\MeghanaKorimi_Executive.jpg"
+          githubUrl="https://github.com/sreeshanth9"
+          linkedInUrl="https://www.linkedin.com/in/kshitij-moghe/"
+        />
+        <MemberCard
+          name="NandVardhan Tagore"
+          // role="Executive"
+          imageSrc="src\assets\members\MeghanaKorimi_Executive.jpg"
+          githubUrl="https://github.com/sreeshanth9"
+          linkedInUrl="https://www.linkedin.com/in/sreeshanth-s-b0a742225/"
+        />
+        <MemberCard
+          name="Deepak Kumar"
+          // role="Executive"
+          imageSrc="src\assets\members\DeepakKumar_Executive.jpg"
+          githubUrl="https://github.com/DkStine"
+          linkedInUrl="https://www.linkedin.com/in/deepakumar24/"
+        />
+        <MemberCard
+          name="Rudra Ayachit"
+          // role="Executive"
+          imageSrc="src\assets\members\RudraAyachit_Executive.jpg"
+          githubUrl="https://github.com/RudraAyachit"
+          linkedInUrl="http://www.linkedin.com/in/RudraAyachit/"
+        />
+        <MemberCard
+          name="Mohammed Aqib"
+          // role="Executive"
+          imageSrc="src\assets\members\RudraAyachit_Executive.jpg"
+          githubUrl="https://github.com/RudraAyachit"
+          linkedInUrl="http://www.linkedin.com/in/RudraAyachit/"
+        />
+        <MemberCard
+          name="Anohita Sen"
+          // role="Executive"
+          imageSrc="src\assets\members\AnohitaSen_Executive.jpg"
+          githubUrl="https://github.com/AnuS401"
+          linkedInUrl="https://www.linkedin.com/in/anohita-sen-00b9aa287/"
+        />
+        <MemberCard
+          name="Sreeya Chatterjee"
+          // role="Executive"
+          imageSrc="src\assets\members\SreeyaChatterjee_Executive.jpg"
+          githubUrl="https://github.com/05sreeyachat"
+          linkedInUrl="http://linkedin.com/in/sreeya-chatterjee-628bb2286"
         />
       </div>
     </div>

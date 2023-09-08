@@ -65,14 +65,14 @@ const MemberCard = (props) => {
         <div
           className={`links-container gap-8 ${divParams.showLinks} text-center flex items-center justify-center`}
         >
-          <a href={props.githubUrl}>
+          <a href={props.githubUrl} target="_github">
             <FaGithub
               style={{ color: "#FFFFFF" }}
               className="hover:shadow-[0_0_20px_white] rounded-full"
               size={48}
             ></FaGithub>
           </a>
-          <a href={props.linkedInUrl}>
+          <a href={props.linkedInUrl} target="_linkedin">
             <TiSocialLinkedin
               style={{ color: "#FFFFFF" }}
               className="hover:shadow-[0_0_20px_white]  rounded-full"

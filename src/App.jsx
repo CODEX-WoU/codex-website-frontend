@@ -1,4 +1,5 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { useEffect } from "react";
 import "./styles/App.css";
 import TheHeader from "./components/TheHeader";
 import TheFooter from "./components/TheFooter";
@@ -8,6 +9,10 @@ import Events from "./pages/Events";
 // import Events from "./components/Events";
 
 function App() {
+  useEffect(() => {
+    window.history.scrollRestoration = "manual";
+  }, []);
+
   return (
     <>
       <BrowserRouter>

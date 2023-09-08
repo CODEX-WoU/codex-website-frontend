@@ -5,8 +5,8 @@ const TheHeader = () => {
   const location = useLocation();
 
   return (
-    <div>
-      <header className="header-container">
+    <div className="sticky top-0 z-10">
+      <header className="header-container ">
         <div className="logo">
           {/* <h2>
             CODE<span style={{ color: "red" }}>&#123;X&#125;</span>
@@ -46,9 +46,7 @@ const TheHeader = () => {
                 Events
               </Link>
             </li>
-            <li>
-              <a href="">Portfolio</a>
-            </li>
+
             <li>
               <a href="">Team</a>
             </li>

@@ -4,7 +4,7 @@ import AppConstants from "../utils/AppConstants";
 const TheFooter = (props) => {
   return (
     <div
-      className={`${props.className} bg-gradient-to-t from-red-700 to-black-500 text-center font-bold text-white pb-10`}
+      className={`${props.className} bg-gradient-to-t from-red-700 to-black-900 text-center font-bold text-white pb-10`}
     >
       <footer className="footer p-10 text-white place-items-center">
         {/* <nav>
@@ -20,32 +20,37 @@ const TheFooter = (props) => {
           </header>
           <a
             href={AppConstants.SOCIAL_MEDIA_LINKS.GITHUB_URL}
-            className="link link-hover inline-flex"
+            target="_github"
+            className="link link-hover inline-flex hover:animate-pulse"
           >
-            <FaGithub className="text-2xl mr-4" />
+            <FaGithub className="text-2xl mr-4 hover:fill-gray-500" />
             Github
           </a>
 
           <a
             href={AppConstants.SOCIAL_MEDIA_LINKS.LINKEDIN_URL}
-            className="link link-hover inline-flex align-middle"
+            target="_linkedin"
+            className="link link-hover inline-flex hover:animate-pulse"
           >
-            <FaLinkedin className="text-2xl mr-4" /> Linkedin
+            <FaLinkedin className="text-2xl mr-4 hover:fill-blue-700" />{" "}
+            Linkedin
           </a>
 
           <a
             href={AppConstants.SOCIAL_MEDIA_LINKS.X_URL}
-            className="link link-hover inline-flex"
+            target="_x"
+            className="link link-hover inline-flex hover:animate-pulse"
           >
-            <FaTwitter className="text-2xl mr-4" />
-            Twitter
+            <FaTwitter className="text-2xl mr-4 hover:fill-blue-400 " />
+            Twitter (X)
           </a>
 
           <a
             href={AppConstants.SOCIAL_MEDIA_LINKS.INSTAGRAM_URL}
-            className="link link-hover inline-flex"
+            target="_instagram"
+            className="link link-hover inline-flex hover:animate-pulse"
           >
-            <FaInstagram className="text-2xl mr-4" />
+            <FaInstagram className="text-2xl mr-4 hover:fill-pink-500" />
             Instagram
           </a>
         </nav>
@@ -57,7 +62,7 @@ const TheFooter = (props) => {
         </nav> */}
         <div>
           <a href="mailto:codex@woxsen.edu.in" className="text-2xl">
-            Email Us: Codex@woxsen.edu.in
+            Email Us: codex@woxsen.edu.in
           </a>
         </div>
         {/* <form>
@@ -83,7 +88,9 @@ const TheFooter = (props) => {
           </fieldset>
         </form> */}
       </footer>
-      <p>© 2023 CODE&#123;X&#125; - Woxsen University</p>
+      <p className="text-center text-white">
+        © 2023 CODE&#123;X&#125; - Woxsen University
+      </p>
     </div>
   );
 };
