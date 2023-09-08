@@ -7,10 +7,11 @@ const About = (props) => {
 
   return (
     <section className={`text-white pb-20 ${props.className}`}>
-      <div className="container mx-auto">
+      <div className="container  mx-auto">
         <div className="flex text-center flex-col items-center">
-          <h2 className="text-7xl font-bold mb-8" style={fontStyle}>
-            About&nbsp;
+          <h2 className="text-7xl break-all font-bold mb-8" style={fontStyle}>
+            About
+            <br className="sm:hidden" />
             <span
               className="events-header text-red-600 font-bold"
               style={fontStyle}

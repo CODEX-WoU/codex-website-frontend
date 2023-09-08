@@ -37,7 +37,7 @@ const LandingPageAlt = () => {
             {" "}
             CODE
             <span className="text-red-600 font-bold">&#123;X&#125;</span>
-            <div className="text-xs leading-normal w-[23.8rem] ">
+            <div className="text-xs leading-normal min-w-[15rem] ">
               <TypeAnimation
                 sequence={[
                   AppConstants.LANDING_PAGE_BLINKING_CURSOR_TEXT,
@@ -54,7 +54,7 @@ const LandingPageAlt = () => {
                 }}
               />
             </div>
-            <div className="flex-none bg-black rounded-lg shadow-xl min-h-[200px] min-w-[26rem] justify-around ">
+            <div className="flex-none bg-black rounded-lg shadow-xl min-h-[200px]  justify-around ">
               <div className={`github ${layoutConfig.marginOnIcons}`}>
                 <a href={AppConstants.SOCIAL_MEDIA_LINKS.GITHUB_URL}>
                   <FaGithub style={{ color: "#ff372d" }} size={64}></FaGithub>

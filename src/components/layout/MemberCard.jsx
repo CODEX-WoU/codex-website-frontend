@@ -7,13 +7,13 @@ import AsyncImage from "./AsyncImage";
 
 const MemberCard = (props) => {
   const nameStyle = {
-    color: "red",
+    color: "red ",
     fontFamily: "Nico Moji",
   };
 
   const colorConsts = {
     backgroundColor: "bg-[#262626]",
-    border: "border-[#333333]",
+    border: "border-[#555555]",
   };
 
   const [divParams, setDivParams] = useState({
@@ -40,11 +40,11 @@ const MemberCard = (props) => {
   return (
     <div className={`mx-10 pt-5 `}>
       <div
-        className={`member-card-content-container grid  w-[300px] h-[430px] ${divParams.gridRows} ${colorConsts.backgroundColor}  border-8 ${colorConsts.border}`}
+        className={`member-card-content-container grid rounded-t-full w-[300px] h-[430px] ${divParams.gridRows} ${colorConsts.backgroundColor}  border-b-4 border-x-4 ${colorConsts.border}`}
         onMouseEnter={toggleLinks}
         onMouseLeave={() => toggleLinks(false)}
       >
-        <div className="text-center row-span-3 pb-5 flex items-center justify-center align-middle">
+        <div className="text-center bg-[var(--dark-mode-background-light-2)] row-span-3 mb-7 flex items-center justify-center align-middle">
           <div className="rounded-full overflow-hidden h-[200px] w-[200px] ml-auto mr-auto">
             <AsyncImage className="block " src={props.imageSrc} />
           </div>
@@ -56,8 +56,8 @@ const MemberCard = (props) => {
             {props.name}
           </div>
           <div
-            style={{ ...nameStyle, fontSize: "24px" }}
-            className="flex text-center justify-center items-center border-b-4 border-[#FFD700] w-[90%]"
+            style={{ ...nameStyle, fontSize: "24px", color: "white" }}
+            className={`flex text-center justify-center items-center border-b-4 ${colorConsts.border} w-[90%]`}
           >
             {props.role}
           </div>
