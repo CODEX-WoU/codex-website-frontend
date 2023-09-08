@@ -163,7 +163,7 @@ const Members = (props) => {
         <MemberCard
           name="Nand Vardhan Tagore"
           // role="Executive"
-          imageSrc="src\assets\members\MeghanaKorimi_Executive.jpg"
+          imageSrc="src\assets\members\NandVardhanTagore_Executive.jpg"
           githubUrl="https://github.com/sreeshanth9"
           linkedInUrl="https://www.linkedin.com/in/sreeshanth-s-b0a742225/"
         />
