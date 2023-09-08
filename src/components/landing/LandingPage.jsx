@@ -76,7 +76,7 @@ const LandingPageAlt = () => {
                   ></TiSocialTwitter>
                 </a>
               </div>
-              <div className="instagram">
+              <div className="instagram" id="about">
                 <a href={AppConstants.SOCIAL_MEDIA_LINKS.INSTAGRAM_URL}>
                   <LiaInstagram
                     style={{ color: "#ff372d" }}

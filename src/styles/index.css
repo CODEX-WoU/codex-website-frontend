@@ -3,12 +3,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
 @tailwind base;
+
+html {
+  scroll-behavior: smooth;
+}
+
 @tailwind components;
 @tailwind utilities;
 
 body {
   background: black;
 }
+
 * {
   padding: 0;
   margin: 0;

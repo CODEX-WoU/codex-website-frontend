@@ -6,7 +6,7 @@ const Members = (props) => {
   };
 
   return (
-    <div className={`${props.className} `}>
+    <div className={`${props.className}`} id="team">
       <div>
         <div
           className={`events-header text-center text-7xl font-bold`}
@@ -124,7 +124,7 @@ const Members = (props) => {
           &#123;S&#125;
         </span>
       </div>
-      <div className="flex flex-grow basis-24 flex-wrap justify-around pt-12 pb-12">
+      <div className="flex flex-grow basis-24 flex-wrap justify-around pt-12 pb-12 border-white border-b-2">
         <MemberCard
           name="Sreeshanth Sangem"
           // role="Executive"

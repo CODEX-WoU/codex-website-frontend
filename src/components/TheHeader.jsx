@@ -5,7 +5,7 @@ const TheHeader = () => {
   const location = useLocation();
 
   return (
-    <div className="sticky top-0 z-10">
+    <div className="sticky top-0 z-10" id="header">
       <header className="header-container ">
         <div className="logo">
           {/* <h2>
@@ -28,7 +28,7 @@ const TheHeader = () => {
               </Link>
             </li>
             <li>
-              <a href="">About</a>
+              <a href="/#about">About</a>
             </li>
             <li>
               <Link
@@ -48,10 +48,10 @@ const TheHeader = () => {
             </li>
 
             <li>
-              <a href="">Team</a>
+              <a href="/#team">Team</a>
             </li>
             <li>
-              <a href="">Contact</a>
+              <a href="/#footer">Contact</a>
             </li>
           </ul>
         </nav>

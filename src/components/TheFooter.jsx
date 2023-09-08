@@ -5,6 +5,7 @@ const TheFooter = (props) => {
   return (
     <div
       className={`${props.className} bg-gradient-to-t from-red-700 to-black-900 text-center font-bold text-white pb-10`}
+      id="footer"
     >
       <footer className="footer p-10 text-white place-items-center">
         {/* <nav>
