@@ -90,7 +90,8 @@ const TheFooter = (props) => {
         </form> */}
       </footer>
       <p className="text-center text-white">
-        © 2023 CODE&#123;X&#125; - Woxsen University
+        © 2023 CODE <span className="text-red-500">&#123;X&#125;</span> - Woxsen
+        University
       </p>
     </div>
   );

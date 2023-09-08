@@ -6,7 +6,7 @@ const Members = (props) => {
   };
 
   return (
-    <div className={`${props.className}`} id="team">
+    <div className={`${props.className}`}>
       <div>
         <div
           className={`events-header text-center text-7xl font-bold`}
@@ -38,7 +38,7 @@ const Members = (props) => {
           name="Lokesh Kumar"
           role="Mentor"
           imageSrc="src\assets\members\LokeshKumar_Mentor.jpg"
-          githubUrl=""
+          githubUrl="#"
           linkedInUrl="https://www.linkedin.com/in/lokeshskshukla/"
         />
         <MemberCard
@@ -140,7 +140,7 @@ const Members = (props) => {
           linkedInUrl="https://www.linkedin.com/in/nikunj-gupta-b66b94258/"
         />
         <MemberCard
-          name="Ryyan Mathew"
+          name="Ryyan Mathew Hasan"
           // role="Executive"
           imageSrc="src\assets\members\RyyanMathewHasan_Executive.jpg"
           githubUrl="https://github.com/ryyan2407"
@@ -150,18 +150,18 @@ const Members = (props) => {
           name="Korimi Meghana"
           // role="Executive"
           imageSrc="src\assets\members\MeghanaKorimi_Executive.jpg"
-          githubUrl="https://github.com/sreeshanth9"
-          linkedInUrl="https://www.linkedin.com/in/sreeshanth-s-b0a742225/"
+          githubUrl="https://github.com/MEGHNAKORIM"
+          linkedInUrl="https://www.linkedin.com/in/meghana-korimi-0a1b5a258/"
         />
         <MemberCard
           name="Kshitij Moghe"
           // role="Executive"
-          imageSrc="src\assets\members\MeghanaKorimi_Executive.jpg"
-          githubUrl="https://github.com/sreeshanth9"
+          imageSrc="src\assets\members\KshitijMoghe_Executive.jpg"
+          githubUrl="https://github.com/Kshitij-0710"
           linkedInUrl="https://www.linkedin.com/in/kshitij-moghe/"
         />
         <MemberCard
-          name="NandVardhan Tagore"
+          name="Nand Vardhan Tagore"
           // role="Executive"
           imageSrc="src\assets\members\MeghanaKorimi_Executive.jpg"
           githubUrl="https://github.com/sreeshanth9"

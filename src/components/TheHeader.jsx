@@ -11,7 +11,9 @@ const TheHeader = () => {
           {/* <h2>
             CODE<span style={{ color: "red" }}>&#123;X&#125;</span>
           </h2> */}
-          <img src="/src/assets/Dark mode logo.svg" width={225} />
+          <a href="/">
+            <img src="/src/assets/Dark mode logo.svg" width={225} />
+          </a>
         </div>
         <input type="checkbox" id="nav_check" hidden />
         <nav className="main-nav">
