@@ -8,18 +8,22 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 const HomePage = () => {
   return (
     <div>
-      <LandingPage />
+      <section>
+        <LandingPage />
+      </section>
       <AnimationOnScroll animateIn="animate__slideInUp" animateOnce={true}>
         <section>
           {<About className="bg-[var(--dark-mode-background-light-1)]" />}
         </section>
       </AnimationOnScroll>
 
-      {/* <Events
+      {/*
+      <section> 
+      <Events
         className="pt-12"
         backgroundColor="bg-[var(--dark-mode-background-light-1)]"
         color="text-[var(--dark-mode-color)]"
-      /> */}
+      /> </section>*/}
       {/* <Blogs /> */}
       <AnimationOnScroll animateIn="animate__slideInUp" animateOnce={true}>
         {" "}

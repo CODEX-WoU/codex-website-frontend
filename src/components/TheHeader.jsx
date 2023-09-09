@@ -30,7 +30,16 @@ const TheHeader = () => {
               </Link>
             </li>
             <li>
-              <a href="/#about">About</a>
+              <a href="/#about" onclick={""}>
+                About
+              </a>
+            </li>
+
+            <li>
+              <a href="/#team">Team</a>
+            </li>
+            <li>
+              <a href="/#footer">Contact</a>
             </li>
             <li>
               <Link
@@ -47,13 +56,6 @@ const TheHeader = () => {
               >
                 Events
               </Link>
-            </li>
-
-            <li>
-              <a href="/#team">Team</a>
-            </li>
-            <li>
-              <a href="/#footer">Contact</a>
             </li>
           </ul>
         </nav>

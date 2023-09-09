@@ -105,7 +105,7 @@ const Members = (props) => {
           linkedInUrl="https://www.linkedin.com/in/dhruvalpadia/"
         />
         <MemberCard
-          name="Anuj Mankurmare"
+          name="Anuj Mankumare"
           role="Media Handler"
           imageSrc="src\assets\members\AnujMankumare_Core.jpg"
           githubUrl="https://github.com/PRIME-07"

@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FaGithub } from "react-icons/fa";
 import { LiaInstagram, LiaLinkedinIn } from "react-icons/lia";
-import { TiSocialTwitter } from "react-icons/ti";
+import { RiTwitterXLine } from "react-icons/ri";
 import AppConstants from "../../utils/AppConstants";
 
 const LandingPageAlt = () => {
@@ -54,7 +54,7 @@ const LandingPageAlt = () => {
                 }}
               />
             </div>
-            <div className="flex-none bg-black rounded-lg shadow-xl min-h-[200px]  justify-around ">
+            <div className="flex-none bg-black rounded-lg shadow-xl  justify-around ">
               <div className={`github ${layoutConfig.marginOnIcons}`}>
                 <a href={AppConstants.SOCIAL_MEDIA_LINKS.GITHUB_URL}>
                   <FaGithub style={{ color: "#ff372d" }} size={64}></FaGithub>
@@ -70,10 +70,10 @@ const LandingPageAlt = () => {
               </div>
               <div className={`Twitter ${layoutConfig.marginOnIcons}`}>
                 <a href={AppConstants.SOCIAL_MEDIA_LINKS.X_URL}>
-                  <TiSocialTwitter
+                  <RiTwitterXLine
                     style={{ color: "#ff372d" }}
-                    size={64}
-                  ></TiSocialTwitter>
+                    size={54}
+                  ></RiTwitterXLine>
                 </a>
               </div>
               <div className="instagram" id="about">
@@ -84,6 +84,11 @@ const LandingPageAlt = () => {
                   ></LiaInstagram>
                 </a>
               </div>
+            </div>
+            <div>
+              <button className="bg-red-700 border-4 hover:bg-white hover:text-red-700 hover:border-red-700 hover:border-2 border-black shadow-[0_0_5px_white] font-['Nico Moji'] font-extralight text-white py-2 px-5 rounded-full text-5xl transition-colors duration-300 ease-in-out">
+                <a href="#about">Know More</a>
+              </button>
             </div>
           </div>
         </div>

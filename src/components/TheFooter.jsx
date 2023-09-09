@@ -6,6 +6,7 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 import AppConstants from "../utils/AppConstants";
+import { RiTwitterXLine } from "react-icons/ri";
 
 const TheFooter = (props) => {
   return (
@@ -48,7 +49,7 @@ const TheFooter = (props) => {
             target="_x"
             className="link link-hover inline-flex hover:animate-pulse"
           >
-            <FaTwitter className="text-2xl mr-4 hover:fill-blue-400 " />
+            <RiTwitterXLine className="text-2xl mr-4 hover:fill-blue-400 " />
             Twitter (X)
           </a>
 
