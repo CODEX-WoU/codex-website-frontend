@@ -38,14 +38,14 @@ const Members = (props) => {
           name="Lokesh Kumar"
           role="Mentor"
           imageSrc="src\assets\members\LokeshKumar_Mentor.jpg"
-          githubUrl="#"
+          githubUrl="https://github.com/lokeshsk"
           linkedInUrl="https://www.linkedin.com/in/lokeshskshukla/"
         />
         <MemberCard
           name="Amogh Deshmukh"
           role="Mentor"
           imageSrc="src\assets\members\AmoghDeshmukh_Mentor.jpeg"
-          githubUrl="#"
+          githubUrl="https://github.com/amoghpesit"
           linkedInUrl="https://www.linkedin.com/in/amogh-deshmukh-35009b17/"
         />
       </div>
@@ -136,7 +136,7 @@ const Members = (props) => {
           name="Nikunj Gupta"
           // role="Executive"
           imageSrc="src\assets\members\NikunjGupta_Executive.jpg"
-          githubUrl="www.linkedin.com/in/nikunj-gupta-b66b94258"
+          githubUrl="https://github.com/nikgup6"
           linkedInUrl="https://www.linkedin.com/in/nikunj-gupta-b66b94258/"
         />
         <MemberCard
@@ -164,8 +164,8 @@ const Members = (props) => {
           name="Nand Vardhan Tagore"
           // role="Executive"
           imageSrc="src\assets\members\NandVardhanTagore_Executive.jpg"
-          githubUrl="https://github.com/sreeshanth9"
-          linkedInUrl="https://www.linkedin.com/in/sreeshanth-s-b0a742225/"
+          githubUrl="https://github.com/TagoreNand"
+          linkedInUrl="https://www.linkedin.com/in/tagore-seeram-96681228b/"
         />
         <MemberCard
           name="Deepak Kumar"
@@ -179,14 +179,14 @@ const Members = (props) => {
           // role="Executive"
           imageSrc="src\assets\members\RudraAyachit_Executive.jpg"
           githubUrl="https://github.com/RudraAyachit"
-          linkedInUrl="http://www.linkedin.com/in/RudraAyachit/"
+          linkedInUrl="https://www.linkedin.com/in/RudraAyachit/"
         />
         <MemberCard
           name="Mohammed Aqib"
           // role="Executive"
-          imageSrc="src\assets\members\RudraAyachit_Executive.jpg"
-          githubUrl="https://github.com/RudraAyachit"
-          linkedInUrl="http://www.linkedin.com/in/RudraAyachit/"
+          imageSrc="src\assets\members\MohammedAqib_Executive.jpg"
+          githubUrl="https://github.com/mdAqibb"
+          linkedInUrl="https://www.linkedin.com/in/mohammed-aqib-a186b2253/"
         />
         <MemberCard
           name="Anohita Sen"
@@ -200,7 +200,7 @@ const Members = (props) => {
           // role="Executive"
           imageSrc="src\assets\members\SreeyaChatterjee_Executive.jpg"
           githubUrl="https://github.com/05sreeyachat"
-          linkedInUrl="http://linkedin.com/in/sreeya-chatterjee-628bb2286"
+          linkedInUrl="https://linkedin.com/in/sreeya-chatterjee-628bb2286"
         />
       </div>
     </div>

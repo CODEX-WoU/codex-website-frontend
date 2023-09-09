@@ -1,4 +1,10 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaTwitter,
+  FaInstagram,
+  FaEnvelope,
+} from "react-icons/fa";
 import AppConstants from "../utils/AppConstants";
 
 const TheFooter = (props) => {
@@ -62,8 +68,11 @@ const TheFooter = (props) => {
           <a className="link link-hover">Cookie policy</a>
         </nav> */}
         <div>
-          <a href="mailto:codex@woxsen.edu.in" className="text-2xl">
-            Email Us: codex@woxsen.edu.in
+          <a
+            href="mailto:codex@woxsen.edu.in"
+            className="text-2xl inline-block flex"
+          >
+            <FaEnvelope className="pt-1.5 text-3xl" />: codex@woxsen.edu.in
           </a>
         </div>
         {/* <form>
