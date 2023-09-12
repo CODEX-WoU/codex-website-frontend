@@ -1,8 +1,21 @@
+import { useState } from "react";
 import "../styles/header.css";
 import { Link, useLocation } from "react-router-dom";
+import DarkModeLogo from "../assets/Dark mode logo.svg";
 
 const TheHeader = () => {
   const location = useLocation();
+
+  const [active, setActive] = useState({
+    home: false,
+    about: false,
+    blogs: false,
+    events: false,
+    team: false,
+    contact: false,
+  });
+
+  function activeClass(active) {}
 
   return (
     <div className="sticky top-0 z-10" id="header">
@@ -12,7 +25,7 @@ const TheHeader = () => {
             CODE<span style={{ color: "red" }}>&#123;X&#125;</span>
           </h2> */}
           <a href="/">
-            <img src="/src/assets/Dark mode logo.svg" width={225} />
+            <img src={DarkModeLogo} width={225} />
           </a>
         </div>
         <input type="checkbox" id="nav_check" hidden />
@@ -23,28 +36,52 @@ const TheHeader = () => {
           <ul>
             <li>
               <Link
+                onClick={() => activeClass("home")}
                 to={"/"}
-                className={location.pathname === "/" ? "active" : ""}
+                className={
+                  (location.pathname === "/" ? "active" : "") +
+                  (active.home === true ? " active" : "")
+                }
               >
                 Home
               </Link>
             </li>
             <li>
-              <a href="/#about" onclick={""}>
+              <a
+                href="/#about"
+                onClick={() => activeClass("about")}
+                className={active.about ? "active" : ""}
+              >
                 About
               </a>
             </li>
 
             <li>
-              <a href="/#team">Team</a>
+              <a
+                href="/#team"
+                onClick={() => activeClass("team")}
+                className={active.team ? "active" : ""}
+              >
+                Team
+              </a>
             </li>
             <li>
-              <a href="/#footer">Contact</a>
+              <a
+                href="/#footer"
+                onClick={() => activeClass("contact")}
+                className={active.contact ? "active" : ""}
+              >
+                Contact
+              </a>
             </li>
             <li>
               <Link
-                className={location.pathname === "/blogs" ? "active" : ""}
+                className={
+                  (location.pathname === "/blogs" ? "active" : "") +
+                  (active.blogs ? " active" : "")
+                }
                 to="/blogs"
+                onClick={() => activeClass("blogs")}
               >
                 Blog
               </Link>
@@ -53,6 +90,7 @@ const TheHeader = () => {
               <Link
                 className={location.pathname === "/events" ? "active" : ""}
                 to="/events"
+                onClick={() => activeClass("events")}
               >
                 Events
               </Link>

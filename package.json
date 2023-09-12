@@ -1,6 +1,7 @@
 {
   "name": "codex-website-frontend",
   "private": true,
+  "homepage": "https://codex.woxsen.edu.in/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

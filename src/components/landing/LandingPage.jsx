@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { LiaInstagram, LiaLinkedinIn } from "react-icons/lia";
 import { RiTwitterXLine } from "react-icons/ri";
 import AppConstants from "../../utils/AppConstants";
+import mainGif from "../../assets/wp2757861.gif";
 
 const LandingPageAlt = () => {
   const [layoutConfig, setlayoutConfig] = useState({
@@ -94,11 +95,7 @@ const LandingPageAlt = () => {
         </div>
         {layoutConfig.showGif && (
           <div className="min-h-[400px] col-span-7 flex align-middle">
-            <img
-              src="src\assets\wp2757861.gif"
-              width={975}
-              className="m-auto"
-            />
+            <img src={mainGif} width={975} className="m-auto" />
           </div>
         )}
       </div>
