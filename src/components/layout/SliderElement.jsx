@@ -21,13 +21,9 @@ const SliderElement = (props) => {
       }}
       className="group flex items-end justify-evenly text-center pb-8 slider-list-element min-h-[600px] min-w-[200px]"
     >
-      <div className="group-hover:opacity-100 opacity-0 transition-opacity ease-in-out delay-150 duration-300 flex align-middle items-center p-3 bg-white/10 w-screen md:w-[65%] justify-evenly backdrop-brightness-50">
-        <div className="font-['Nico_Moji'] text-left flex-1 text-3xl">
-          Freshmen Induction By GeeksForGeeks
-        </div>
-        <div className="font-['Nico_Moji'] text-right">
-          Date: 15th Sept, 2023
-        </div>
+      <div className="group-hover:opacity-100 opacity-0 transition-opacity ease-in-out delay-150 duration-300 align-middle items-center py-3 px-10 bg-white/10  min-w-[30%] md:min-w-[30%] sm:min-w-[100%] backdrop-brightness-50 rounded-full">
+        <div className="text-3xl font-['Nico_Moji']">{props.title}</div>
+        <div className="font-['Nico_Moji'] mt-4 text-xl">{props.date}</div>
       </div>
     </div>
   );

@@ -44,13 +44,25 @@ const EventsAlt = (props) => {
             className="w-screen"
           >
             <SwiperSlide>
-              <SliderElement backgroundImage={SIHPoster}></SliderElement>
+              <SliderElement
+                backgroundImage={SIHPoster}
+                title="SIH Internal Hackathon"
+                date="18th to 25th September,2023"
+              ></SliderElement>
             </SwiperSlide>
             <SwiperSlide>
-              <SliderElement backgroundImage={GFGPoster} />
+              <SliderElement
+                backgroundImage={GFGPoster}
+                title="Freshmen Induction By GeeksForGeeks"
+                date="15th September, 2023"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <SliderElement backgroundImage={SkillDevelopmentPythonPoster} />
+              <SliderElement
+                title="Skill Development Program - Python"
+                date="14th September, 2023 (Weekly Recurring)"
+                backgroundImage={SkillDevelopmentPythonPoster}
+              />
             </SwiperSlide>
           </Swiper>
         </div>
