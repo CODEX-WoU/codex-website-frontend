@@ -1,4 +1,4 @@
-// import Events from "../components/landing/Events";
+import Events from "../components/landing/Events";
 import LandingPage from "../components/landing/LandingPage";
 import Members from "../components/landing/Members";
 import About from "../components/landing/About";
@@ -16,15 +16,16 @@ const HomePage = () => {
           {<About className="bg-[var(--dark-mode-background-light-1)]" />}
         </section>
       </AnimationOnScroll>
+      <AnimationOnScroll animateIn="animate__slideInUp" animateOnce={true}>
+        <section>
+          <Events
+            className="pt-12"
+            backgroundColor="bg-[var(--dark-mode-background-light-1)]"
+            color="text-[var(--dark-mode-color)]"
+          />{" "}
+        </section>{" "}
+      </AnimationOnScroll>
 
-      {/*
-      <section> 
-      <Events
-        className="pt-12"
-        backgroundColor="bg-[var(--dark-mode-background-light-1)]"
-        color="text-[var(--dark-mode-color)]"
-      /> </section>*/}
-      {/* <Blogs /> */}
       <AnimationOnScroll animateIn="animate__slideInUp" animateOnce={true}>
         {" "}
         <section>

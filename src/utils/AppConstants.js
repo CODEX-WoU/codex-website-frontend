@@ -6,8 +6,8 @@ const AppConstants = {
   SOCIAL_MEDIA_LINKS: {
     GITHUB_URL: "https://github.com/CODEX-WoU/",
     INSTAGRAM_URL: "https://www.instagram.com/codex_wou",
-    LINKEDIN_URL: null,
-    X_URL: null,
+    LINKEDIN_URL: "https://www.linkedin.com/company/codex-wou/about/",
+    X_URL: "https://twitter.com/CodeX_WOU",
   },
 };
 

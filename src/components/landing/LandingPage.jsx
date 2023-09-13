@@ -38,7 +38,7 @@ const LandingPageAlt = () => {
             {" "}
             CODE
             <span className="text-red-600 font-bold">&#123;X&#125;</span>
-            <div className="text-xs leading-normal min-w-[15rem] ">
+            <div className="text-xs leading-normal min-w-[17rem] ">
               <TypeAnimation
                 sequence={[
                   AppConstants.LANDING_PAGE_BLINKING_CURSOR_TEXT,
@@ -87,7 +87,7 @@ const LandingPageAlt = () => {
               </div>
             </div>
             <div>
-              <button className="bg-red-700 border-4 hover:bg-white hover:text-red-700 hover:border-red-700 hover:border-2 border-black shadow-[0_0_5px_white] font-['Nico Moji'] font-extralight text-white py-2 px-5 rounded-full text-5xl transition-colors duration-300 ease-in-out">
+              <button className="bg-red-700 border-4 hover:bg-white hover:text-red-700 hover:border-red-700 hover:border-2 border-black shadow-[0_0_5px_white] font-['Nico Moji'] font-extralight text-white py-5 px-3 rounded-2xl text-5xl transition-colors duration-300 ease-in-out">
                 <a href="#about">Know More</a>
               </button>
             </div>

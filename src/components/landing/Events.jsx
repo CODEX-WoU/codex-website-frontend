@@ -4,6 +4,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Autoplay, Keyboard, Navigation } from "swiper/modules";
+import SIHPoster from "/src/assets/events/SIHPoster.png";
+import GFGPoster from "/src/assets/events/GFGPoster.png";
+import SkillDevelopmentPythonPoster from "/src/assets/events/SkillDevelopmentPython.jpeg";
+import SliderElement from "../layout/SliderElement";
 
 const EventsAlt = (props) => {
   const backgroundColor = props.backgroundColor;
@@ -25,40 +29,28 @@ const EventsAlt = (props) => {
           <Swiper
             pagination={true}
             modules={[Navigation, Pagination, Autoplay, Keyboard]}
-            loop={true}
             autoplay={{
               delay: 3000,
               disableOnInteraction: true,
             }}
-            slidesPerView={1}
+            slidesPerView={"auto"}
             navigation={{
               enabled: true,
             }}
+            centeredSlides={true}
             keyboard={{
               enabled: true,
             }}
+            className="w-screen"
           >
             <SwiperSlide>
-              <div
-                style={{
-                  backgroundImage: "url('../../src/assets/sample1.jpg')",
-                }}
-                className="slider-list-element min-h-[600px] min-w-[200px]"
-              ></div>
+              <SliderElement backgroundImage={SIHPoster}></SliderElement>
             </SwiperSlide>
             <SwiperSlide>
-              <div
-                style={{
-                  backgroundImage: "url('../../src/assets/sample1.jpg')",
-                }}
-                className="slider-list-element  min-h-[600px] min-w-[200px]"
-              ></div>
+              <SliderElement backgroundImage={GFGPoster} />
             </SwiperSlide>
             <SwiperSlide>
-              <div className="slider-list-element  min-h-[600px] min-w-[200px]"></div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="slider-list-element  min-h-[600px] min-w-[200px]"></div>
+              <SliderElement backgroundImage={SkillDevelopmentPythonPoster} />
             </SwiperSlide>
           </Swiper>
         </div>
