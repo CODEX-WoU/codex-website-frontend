@@ -2,7 +2,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { useEffect } from "react";
 import "./styles/App.css";
 import TheHeader from "./components/TheHeader";
-import TheFooter from "./components/TheFooter";
+import TheFooterAlt from "./components/TheFooterAlt";
 import HomePage from "./pages/HomePage";
 import Blogs from "./pages/Blog";
 import Events from "./pages/Events";
@@ -31,7 +31,7 @@ function App() {
             <Route path="/events" exact element={<Events />} />
           </Route>
         </Routes>
-        <TheFooter className="mt-16" />
+        <TheFooterAlt />
       </BrowserRouter>
     </>
   );

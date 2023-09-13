@@ -1,10 +1,4 @@
-import {
-  FaGithub,
-  FaLinkedin,
-  FaTwitter,
-  FaInstagram,
-  FaEnvelope,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
 import AppConstants from "../utils/AppConstants";
 import { RiTwitterXLine } from "react-icons/ri";
 
@@ -69,10 +63,7 @@ const TheFooter = (props) => {
           <a className="link link-hover">Cookie policy</a>
         </nav> */}
         <div>
-          <a
-            href="mailto:codex@woxsen.edu.in"
-            className="text-2xl inline-block flex"
-          >
+          <a href="mailto:codex@woxsen.edu.in" className="text-2xl flex">
             <FaEnvelope className="pt-1.5 text-3xl" />: codex@woxsen.edu.in
           </a>
         </div>
