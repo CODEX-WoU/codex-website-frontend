@@ -17,7 +17,7 @@ const HomePage = () => {
         </section>
       </AnimationOnScroll>
       <AnimationOnScroll animateIn="animate__slideInUp" animateOnce={true}>
-        <section>
+        <section id="events">
           <Events
             className="pt-12"
             backgroundColor="bg-[var(--dark-mode-background-light-1)]"
@@ -28,7 +28,7 @@ const HomePage = () => {
 
       <AnimationOnScroll animateIn="animate__slideInUp" animateOnce={true}>
         {" "}
-        <section>
+        <section id="team">
           {
             <Members className="bg-[var(--dark-mode-background-light-2)] pt-12" />
           }

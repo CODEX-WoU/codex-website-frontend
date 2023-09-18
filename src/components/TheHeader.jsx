@@ -55,7 +55,15 @@ const TheHeader = () => {
                 About
               </a>
             </li>
-
+            <li>
+              <a
+                className={active.contact ? "active" : ""}
+                href="/#events"
+                onClick={() => activeClass("events")}
+              >
+                Events
+              </a>
+            </li>
             <li>
               <a
                 href="/#team"
@@ -84,15 +92,6 @@ const TheHeader = () => {
                 onClick={() => activeClass("blogs")}
               >
                 Blog
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={location.pathname === "/events" ? "active" : ""}
-                to="/events"
-                onClick={() => activeClass("events")}
-              >
-                Events
               </Link>
             </li>
           </ul>

@@ -4,10 +4,13 @@ import { RiTwitterXLine } from "react-icons/ri";
 
 const TheFooterAlt = () => {
   return (
-    <footer className=" bg-gradient-to-t from-red-700 to-black-900 ">
+    <footer
+      className=" bg-gradient-to-t from-red-700 to-black-900 "
+      id="footer"
+    >
       <div class="flex flex-col items-center text-center text-white">
         <div class="container pt-9">
-          <div class=" flex justify-center gap-x-16">
+          <div class=" flex justify-center gap-x-4 md:gap-x-16">
             <div>
               <a
                 href={AppConstants.SOCIAL_MEDIA_LINKS.GITHUB_URL}

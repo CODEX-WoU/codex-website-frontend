@@ -19,10 +19,7 @@ const About = (props) => {
               &#123;US&#125;
             </span>
           </h2>
-          <p
-            className="text-lg leading-relaxed text-center max-w-4xl mb-12"
-            id="team"
-          >
+          <p className="text-lg leading-relaxed text-center max-w-4xl mb-12">
             {AppConstants.ABOUT_LANDING_PAGE}
           </p>
         </div>
